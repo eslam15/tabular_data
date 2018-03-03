@@ -1,0 +1,48 @@
+// tablets & ipads
+@media (max-width: $screen-sm-max) {
+    nav {
+        .tabs-holder {
+            .tab-content {
+                .tab-pane{
+                    table {
+                        thead {
+                            th {
+                                max-width: 100%;
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+// mobiles
+@media (max-width: $screen-xs-max) {
+    nav {
+        .tabs-holder {
+            .nav-tabs {
+                padding-bottom: 0;
+                li {
+                    min-width: 100%;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .table-responsive {
+            margin-bottom: 0;
+        }
+    }
+}
+           

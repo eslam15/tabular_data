@@ -1,0 +1,187 @@
+nav {
+    padding: 25px 0 50px 0;
+    .tabs-holder {
+        .nav-tabs {
+            padding-bottom: 2px;
+            border-bottom: 2px solid $lightBlue;
+            li {
+                margin-right: 5px;
+                min-width: 145px;
+                text-align: center;
+                a {
+                    background-color: $tabColor;
+                    color: $white;
+                    border: none;
+                    @include border-radius(0);
+                    margin: 0;
+                    padding: 12px 20px;
+                    outline: 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    @include transition (0.3s all);
+                    &:hover {
+                        background-color: $lightBlue;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    a {
+                        background-color: $lightBlue;
+                        color: $white;
+                        border: none; 
+                        &:focus {
+                            background-color: $lightBlue;
+                            color: $white;
+                            outline: 0;
+                            border: none;                    
+                            @include box-shadow(none);
+                        }
+                        &:hover {
+                            background-color: $lightBlue;
+                            color: $white;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            padding-top: 25px;
+            .tab-pane {
+                table {
+                    margin: 0;
+                    thead {
+                        background-color: $lightBlue;
+                        color: $white;
+                        th {
+                            max-width: 150px;
+                            vertical-align: middle;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            text-transform: capitalize;
+                        }
+                    }
+                    tbody {
+                        tr {
+                            &:nth-of-type(odd) {
+                                background-color: $white;
+                            }
+                            &:nth-of-type(even) {
+                                background-color: $stripColor;
+                            }
+                            td {
+                                max-width: 150px;
+                                vertical-align: middle;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                                color: $grey;
+                                &.check-cell {
+                                    text-align: center;
+                                        input[type='checkbox'] {
+                                        -webkit-appearance: none;
+                                        margin: 0 0 -5px 0;
+                                        &:focus {
+                                            outline: 0;
+                                        }
+                                        &:after {
+                                            line-height: 1.5em;
+                                            content: '';
+                                            display: inline-block;
+                                            width: 18px;
+                                            height: 18px;
+                                            border: 1px solid $lightGrey;
+                                            @include border-radius(5px);
+                                            background-color: $white;
+                                            cursor: pointer;
+                                            margin-top: 5px;
+                                            @include transition (0.3s all);
+                                        }
+                                        &:checked {
+                                            &:after {
+                                                width: 18px;
+                                                height: 18px;
+                                                border: 3px solid $tabColor;
+                                                background-color: $lightBlue;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.title-cell {
+                                    padding-right: 20px;
+                                    a {
+                                        text-decoration: underline;
+                                        color: $blue;
+                                    }
+                                }
+                                &.temp-cell {
+                                    padding-right: 20px;
+                                }
+                                &.start-cell {
+                                    span {
+                                        display: block;
+                                        line-height: 1.2;
+                                        &.time {
+                                            color: $yellow;
+                                        }
+                                    }
+                                }
+                                &.end-cell {
+                                     span {
+                                        display: block;
+                                        line-height: 1.2;
+                                        &.time {
+                                            color: $green;
+                                        }
+                                     }
+                                }
+                                &.days-cell {
+                                    width: 60px;
+                                    color: $red;
+                                    text-align: center;
+                                }
+                                &.solved-cell {
+                                    text-align: center;
+                                    width: 60px;
+                                }
+                                &.graded-cell {
+                                    text-align: center;
+                                    width: 60px;
+                                }
+                                &.icon-cell {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-holder {
+            padding: 20px 0 10px 0;
+            border-bottom: 1px solid  $tableBorder;
+            border-left: 1px solid $tableBorder;
+            border-right: 1px solid $tableBorder;
+            .load-more {
+                color: $loadColor;
+                text-align: center;
+                display: block;
+                margin: auto;
+                background-color: transparent;
+                border: none;
+                @include border-radius(0);
+                padding: 0;
+                font-weight: bold;
+                &:focus {
+                    outline: 0;
+                    @include box-shadow(none);
+                }
+            }
+        }
+    }
+}
+
+
+  

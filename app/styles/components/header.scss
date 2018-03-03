@@ -1,0 +1,23 @@
+header {
+    border-bottom: 5px solid $borderColor;
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        margin: 25px 10px;
+        a {
+            height: 100%;
+            display: inline-block;
+            img {
+                height: 100%;
+            }
+        }
+        h1 {
+            margin: 5px 0 0 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $mainBlack;
+        }
+    }
+}

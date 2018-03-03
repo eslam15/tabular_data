@@ -1,0 +1,15 @@
+footer {
+    background-color: $lightBlue;
+    padding: 15px 0;
+    p {
+        margin: 0;
+        color: $white;
+        a {
+            color: $white;
+            padding-left: 15px;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
