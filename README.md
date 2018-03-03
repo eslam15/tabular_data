@@ -1,4 +1,4 @@
-# frontend_task
+# frontend_task (tabular data)
 
 # Steps to run the task:
 
