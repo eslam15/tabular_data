@@ -1,7 +1,58 @@
-nav {
-    .nav-tabs {
-        .ie & {
+.ie {
+    header {
+        .logo {
+            display: block;
+            h1 {
+                display: inline-block;
+            }
+        }
+    }
+    
+
+    nav {
+        .nav-tabs {
             padding-bottom: 1px;
         }
+        .tab-content {
+            .tab-pane {
+                table {
+                    tbody {
+                        td {
+                            &.check-cell {
+                                text-align: center;
+                                input[type='checkbox'] {
+                                    @include transition (0.3s all);
+                                    line-height: 1.5em;
+                                    content: '';
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    @include border-radius(5px);
+                                    background-color: #eee;
+                                    cursor: pointer;
+                                    margin-top: 5px;
+                                    @include transition (0.3s all);
+                                    &:checked {
+                                        width: 18px;
+                                        height: 18px;
+                                        background-color: $lightBlue;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // checkbox reset for IE
+    input::-ms-check {
+        /* IE 8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        /* IE 5-7 */
+        filter: alpha(opacity=0);
+        /* Good browsers :) */
+        opacity: 0;
     }
 }
