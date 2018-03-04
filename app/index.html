@@ -54,12 +54,16 @@
                             <a href="#returned" aria-controls="returned" role="tab" data-toggle="tab">returned</a>
                         </li>
                     </ul>
+                    <div class="search-input">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" id="search"  placeholder="Search ..">
+                    </div>
     
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade" id="templates">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped">
+                                <table id="tempTable" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
                                             <th></th>

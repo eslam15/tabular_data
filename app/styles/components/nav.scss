@@ -48,6 +48,29 @@ nav {
                 }
             }
         }
+        .search-input {
+            position: relative;
+            i {
+                position: absolute;
+                top: 13px;
+                bottom: auto;
+                left: 15px;
+                right: auto;
+                color: $lightBlue;
+            }
+            #search {
+                height: 40px;
+                padding: 6px 40px;
+                margin-top: 25px;
+                border: 1px solid $tableBorder;
+                @include border-radius(0);
+                &:focus {
+                    outline: 0;
+                    @include box-shadow(none);
+                    border: 1px solid $tableBorder;
+                }
+            }
+        }
         .tab-content {
             padding-top: 25px;
             .tab-pane {

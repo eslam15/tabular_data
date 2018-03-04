@@ -2,8 +2,12 @@
 window.jQuery = window.$ = require('jquery');
 
 // include bootstrap js
-var bootstrap = require('bootstrap-sass');
+let bootstrap = require('bootstrap-sass');
 
 // include browsers detect
-var browsers = require('./modules/browsers.js');
+let browsers = require('./modules/browsers.js');
 browsers();
+
+// include filter
+let filter = require('./modules/filter.js');
+filter();
