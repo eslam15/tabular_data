@@ -2,7 +2,7 @@ nav {
     padding: 25px 0 50px 0;
     .tabs-holder {
         .nav-tabs {
-            padding-bottom: 2px;
+            padding-bottom: 1px;
             border-bottom: 2px solid $lightBlue;
             li {
                 margin-right: 5px;
@@ -31,12 +31,12 @@ nav {
                     a {
                         background-color: $lightBlue;
                         color: $white;
-                        border: none; 
+                        border: none;
                         &:focus {
                             background-color: $lightBlue;
                             color: $white;
                             outline: 0;
-                            border: none;                    
+                            border: none;
                             @include box-shadow(none);
                         }
                         &:hover {
@@ -80,7 +80,7 @@ nav {
                                 color: $grey;
                                 &.check-cell {
                                     text-align: center;
-                                        input[type='checkbox'] {
+                                    input[type='checkbox'] {
                                         -webkit-appearance: none;
                                         margin: 0 0 -5px 0;
                                         &:focus {
@@ -129,13 +129,13 @@ nav {
                                     }
                                 }
                                 &.end-cell {
-                                     span {
+                                    span {
                                         display: block;
                                         line-height: 1.2;
                                         &.time {
                                             color: $green;
                                         }
-                                     }
+                                    }
                                 }
                                 &.days-cell {
                                     width: 60px;
@@ -161,7 +161,7 @@ nav {
         }
         .btn-holder {
             padding: 20px 0 10px 0;
-            border-bottom: 1px solid  $tableBorder;
+            border-bottom: 1px solid $tableBorder;
             border-left: 1px solid $tableBorder;
             border-right: 1px solid $tableBorder;
             .load-more {
