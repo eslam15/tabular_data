@@ -187,6 +187,12 @@ nav {
             border-bottom: 1px solid $tableBorder;
             border-left: 1px solid $tableBorder;
             border-right: 1px solid $tableBorder;
+            .no-results {
+                display: none;
+                text-align: center;
+                color: #b3b3b3;
+                font-size: 20px;
+            }
             .load-more {
                 color: $loadColor;
                 text-align: center;
